@@ -21,3 +21,16 @@ model Team {
 
   @@map(name: "Team")
 }
+
+model Food {
+  id            Int     @id @default(autoincrement())
+  img           String
+  instance      String
+  program       String
+  verified      Boolean
+  acc           BigInt
+  target        BigInt
+  dest          BigInt
+  dateCreated   DateTime @default(now())
+  dateExpired   DateTime
+}
